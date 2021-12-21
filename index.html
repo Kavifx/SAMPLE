@@ -8,36 +8,40 @@
 			<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/css/bootstrap.min.css" type="text/css" />
 			<script src="https://cdn.jsdelivr.net/npm/bootstrap@5/dist/js/bootstrap.min.js"></script>
 			<style type="text/css">
-				#home{
+				.parallaxHome{
 					background-image: url('https://image.freepik.com/free-photo/medium-shot-happy-couple-with-laptop_23-2149046217.jpg');
-					background-size: cover;
-					background-position: center;					
-					width: 100%;	
-					height: 25rem;				
-				}
-
-				#abt{
-					background-image: url('https://image.freepik.com/free-photo/aged-couple-pensioners-talking-with-employee_1398-4339.jpg');
-					background-size: cover;
+					min-height: 500px;
+					background-attachment: fixed;
 					background-position: top;
-					height: 25rem;
+					background-repeat: no-repeat;
+					background-size: cover;
 				}
 
-				#pdt{
-					background: transparent;
+				.parallaxAbt{
+					background-image: url('https://image.freepik.com/free-photo/aged-couple-pensioners-talking-with-employee_1398-4339.jpg');
+					min-height: 500px;
+					background-attachment: fixed;
+					background-position: top;
+					background-repeat: no-repeat;
 					background-size: cover;
-					height: 10rem;
+				}
+
+				.parallaxPdt{
+					background-image: none;
+					min-height: 500px;
+					background-attachment: fixed;
+					background-position: top;
+					background-repeat: no-repeat;
+					background-size: cover;
 				}
 
 				#layer {
-					background-color: rgba(57,12,12,0.5);
-					height: 25rem;
+					background-image: none;					
 				}				
 
 
 				#layer2 {
-					background-color: rgba(255,255,255,0.5);
-					height: 25rem;
+					background-color: none;
 				}				
 
 				.parallax{
@@ -63,14 +67,15 @@
 					</div>
 				</div>	
 			</div>
-			<section class="container-fluid" id="home">
+			<section class="container-fluid">		
+				<div class="parallaxHome"></div>	
 				<div class="row" id="layer">
 		           <div class="col-lg-12 col-xl-12">
 		               <div class="container mt-3 pt-2 mt-lg-5 pt-lg-5 mb-lg-5 pb-lg-5">
 		                    <div class="row text-justify">
 		                        <div class="col-lg-2 col-xl-2">&nbsp;</div>
 		                        <div class="col-lg-8 col-xl-8">
-		                            <h3 class="text-white">
+		                            <h3 class="text-dark">
 		                             	"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."<br /><br/>
 		                              	"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
 		                          	</h3>
@@ -84,16 +89,18 @@
 		                </div>            
 		            </div>             
                 </div>
+                <div class="parallaxHome"></div>
 			</section>
 
-			<section class="container-fluid" id="abt">
+			<section class="container-fluid">
+				<div class="parallaxAbt"></div>
 				<div class="row" id="layer">
 		           <div class="col-lg-12 col-xl-12">
 		               <div class="container mt-3 pt-3 mt-lg-5 pt-lg-5 mb-lg-5 pb-lg-5">
 		                    <div class="row text-justify">
 		                        <div class="col-lg-2 col-xl-2">&nbsp;</div>
 		                        <div class="col-lg-8 col-xl-8">
-		                            <h3 class="text-white">
+		                            <h3 class="text-dark">
 		                             	"Neque porro quisquam est qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit..."<br/><br />
 		                              	"There is no one who loves pain itself, who seeks after it and wants to have it, simply because it is pain..."
 		                          	</h3>	
@@ -103,6 +110,7 @@
 		                </div>            
 		            </div>             
                 </div>
+                <div class="parallaxAbt"></div>
 			</section>
 			<section class="container-fluid" id="pdt">
 				<div class="row">
